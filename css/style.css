@@ -1,0 +1,62 @@
+.underwater{
+background-image: url(/images/R.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height: 1000px;
+object-fit: cover;
+position: relative;}
+
+.container{
+position: absolute;
+ display: flex;
+ justify-content: center;
+}
+.jellyfish{
+    width: 150px;
+margin-top: 600px;
+margin-left: 600px;
+animation-name: jelly;
+animation: jelly 20s  infinite ;
+}
+.man{
+margin-left: 2000px;
+margin-top: 500px;
+animation-name: swimer;
+position: absolute;
+animation: swimer 50s reverse infinite;
+animation-delay: 0.3s;
+animation-timing-function: ease-out;
+}
+.waterhorse{
+    height: 120px;
+    width: 200px;
+    opacity: 0.9;
+    margin-top: 640px;
+}
+  
+.jellyfish2{
+    width:150px;
+    margin-bottom: 300px;
+    margin-left: 50px;
+    opacity: 0.8;
+    animation: jelly2;
+    animation: jelly2  30s reverse infinite ;}
+
+/* keyframes */
+
+@keyframes swimer{
+    from { margin-left: 60%; }  
+    to{     margin-right: 30%; }
+}
+
+@keyframes jelly{
+
+from {margin-bottom: 30%;}
+to {margin-top: 70%;}
+}
+
+@keyframes jelly2{
+
+    from {margin-bottom: 50%;}
+    to {margin-top: 10%;}
+    }
