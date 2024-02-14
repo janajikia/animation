@@ -1,62 +1,58 @@
-.underwater{
-background-image: url(/images/R.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-height: 1000px;
-object-fit: cover;
-position: relative;}
 
-.container{
-position: absolute;
- display: flex;
- justify-content: center;
+.underwater{
+width: 100%;
+height: 700px;
+display: flex;
+position: relative;
 }
+
+.photo{
+    width: 100%;
+}
+
 .jellyfish{
     width: 150px;
-margin-top: 600px;
-margin-left: 600px;
-animation-name: jelly;
-animation: jelly 20s  infinite ;
+    position: absolute;
+    left: 650px;
+    top: 50px;
+    animation: jelly 14s infinite;
 }
 .man{
-margin-left: 2000px;
-margin-top: 500px;
-animation-name: swimer;
-position: absolute;
-animation: swimer 50s reverse infinite;
-animation-delay: 0.3s;
-animation-timing-function: ease-out;
+    left:400px;
+    top: 350px;
+    position: absolute;
+    animation: swimer 30s infinite;
 }
 .waterhorse{
     height: 120px;
     width: 200px;
     opacity: 0.9;
-    margin-top: 640px;
+    top: 380px;
+    position: absolute;
 }
-  
+
 .jellyfish2{
     width:150px;
-    margin-bottom: 300px;
-    margin-left: 50px;
-    opacity: 0.8;
-    animation: jelly2;
-    animation: jelly2  30s reverse infinite ;}
+    left: 400px;
+    top: 270px;
+    opacity: 0.9;
+    animation: jelly2 30s infinite;
+    position: absolute;
+    }
 
 /* keyframes */
 
 @keyframes swimer{
-    from { margin-left: 60%; }  
-    to{     margin-right: 30%; }
+from { margin-left: 50%; }  
+    to{  margin-right: 30%; }
 }
 
 @keyframes jelly{
-
-from {margin-bottom: 30%;}
-to {margin-top: 70%;}
+from {margin-top: 25%;}
+to {margin-bottom: 0%;}
 }
 
 @keyframes jelly2{
-
-    from {margin-bottom: 50%;}
-    to {margin-top: 10%;}
+ from {margin-top: 10%;}
+    to {margin-bottom: 30%;}
     }
